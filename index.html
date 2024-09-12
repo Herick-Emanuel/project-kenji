@@ -9,8 +9,18 @@
 </head>
 <body>
 
-  <div class="container text-center mt-5">
-    <button id="addQueryBtn" class="btn btn-primary mb-3">+ Adicionar uma Query</button>
+  <header class="bg-dark text-white text-center py-3">
+    <h1>Gerenciador de Queries</h1>
+    <p>Adicione, edite e execute queries diretamente.</p>
+  </header>
+
+  <div class="container my-5">
+    <div class="text-center mb-4">
+      <button id="addQueryBtn" class="btn btn-success btn-lg">+ Adicionar uma Query</button>
+    </div>
+
+    <div id="cardsContainer" class="row g-4">
+    </div>
   </div>
 
   <div class="modal fade" id="queryModal" tabindex="-1" aria-labelledby="queryModalLabel" aria-hidden="true">
@@ -24,24 +34,23 @@
           <form id="queryForm">
             <div class="mb-3">
               <label for="queryTitle" class="form-label">Título</label>
-              <input type="text" class="form-control" id="queryTitle" required>
+              <input type="text" class="form-control" id="queryTitle" placeholder="Insira o título da query" required>
             </div>
             <div class="mb-3">
               <label for="queryText" class="form-label">Query</label>
-              <textarea class="form-control" id="queryText" rows="3" required></textarea>
+              <textarea class="form-control" id="queryText" rows="3" placeholder="Escreva sua query aqui" required></textarea>
             </div>
             <div class="mb-3">
               <label for="queryDescription" class="form-label">Descrição</label>
-              <textarea class="form-control" id="queryDescription" rows="3" required></textarea>
+              <textarea class="form-control" id="queryDescription" rows="3" placeholder="Descreva o que a query faz" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Salvar Query</button>
+            <div class="text-end">
+              <button type="submit" class="btn btn-primary">Salvar Query</button>
+            </div>
           </form>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="container mt-4" id="cardsContainer">
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

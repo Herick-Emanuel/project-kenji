@@ -1,11 +1,56 @@
+body {
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: #343a40;
+}
+
+#addQueryBtn {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 #cardsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .card {
-    width: 300px;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.modal-header {
+  background-color: #343a40;
+  color: white;
+}
+
+.modal-content {
+  border-radius: 8px;
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+form .btn-primary {
+  background-color: #28a745;
+  border-color: #28a745;
+}
